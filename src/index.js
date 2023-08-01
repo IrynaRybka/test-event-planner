@@ -10,7 +10,7 @@ const root = createRoot(rootElement);
 
 root.render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename='test-event-planner'>
       <App />
     </BrowserRouter>
   </StrictMode>
