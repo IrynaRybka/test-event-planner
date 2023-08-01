@@ -1,7 +1,7 @@
 const AddEventPage = () => {
     return (
       <div>
-      add event
+        <h1>Create new event</h1>
       </div>
     );
   };
