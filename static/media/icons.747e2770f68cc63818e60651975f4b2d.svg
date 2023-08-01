@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+    <defs>
+        <!-- icon-search -->
+        <symbol id="icon-search" viewBox="0 0 32 32">
+            <path
+                d="M25.96 27.374c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414l-1.414 1.414zM23 14c0 4.971-4.029 9-9 9v2c6.075 0 11-4.925 11-11h-2zM14 23c-4.971 0-9-4.029-9-9h-2c0 6.075 4.925 11 11 11v-2zM5 14c0-4.971 4.029-9 9-9v-2c-6.075 0-11 4.925-11 11h2zM14 5c4.971 0 9 4.029 9 9h2c0-6.075-4.925-11-11-11v2zM27.374 25.96l-5.583-5.583-1.414 1.414 5.583 5.583 1.414-1.414z">
+            </path>
+        </symbol>
+
+        <!-- icon-search-list stroke: black; -->
+        <symbol id="icon-filters-list" viewBox="0 0 32 32">
+            <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2"
+                d="M18.667 6.667c0-1.473-1.194-2.667-2.667-2.667s-2.667 1.194-2.667 2.667M18.667 6.667c0 1.473-1.194 2.667-2.667 2.667s-2.667-1.194-2.667-2.667M18.667 6.667h8M13.333 6.667h-8M21.333 16c0 1.473 1.194 2.667 2.667 2.667s2.667-1.194 2.667-2.667c0-1.473-1.194-2.667-2.667-2.667s-2.667 1.194-2.667 2.667zM21.333 16h-16M10.667 25.333c0-1.473-1.194-2.667-2.667-2.667s-2.667 1.194-2.667 2.667c0 1.473 1.194 2.667 2.667 2.667s2.667-1.194 2.667-2.667zM10.667 25.333h16">
+            </path>
+        </symbol>
+
+        <!-- icon-search-cup -->
+        <symbol id="icon-filters" viewBox="0 0 32 32">
+            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2"
+                d="M5.333 5.333l6.667 10.667v8l8 4v-12l6.667-10.667h-21.333z"></path>
+        </symbol>
+
+        <!-- chevron-down -->
+        <symbol id="icon-chevron-down" viewBox="0 0 32 32">
+            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2"
+                d="M9.333 13.333l6.667 6.667 6.667-6.667"></path>
+        </symbol>
+
+        <!-- arrow-down -->
+        <symbol id="icon-arrow-down" viewBox="0 0 32 32">
+            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2"
+                d="M16 22.667v-13.333M16 22.667l-5.333-5.333M16 22.667l5.333-5.333"></path>
+        </symbol>
+
+        <!-- arrow-up -->
+        <symbol id="icon-arrow-up" viewBox="0 0 32 32">
+            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2"
+                d="M16 9.333v13.333M16 9.333l5.333 5.333M16 9.333l-5.333 5.333"></path>
+        </symbol>
+
+        <!-- icon-plus stroke: black; -->
+        <symbol id="icon-plus" viewBox="0 0 33 32">
+            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2"
+                d="M16.667 5.333v21.333M6 16h21.333"></path>
+        </symbol>
+
+    </defs>
+</svg>
