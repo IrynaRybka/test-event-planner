@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/test-event-planner/static/css/main.7acaea2f.css",
-    "main.js": "/test-event-planner/static/js/main.acf874bc.js",
-    "static/js/646.f5f46f5a.chunk.js": "/test-event-planner/static/js/646.f5f46f5a.chunk.js",
+    "main.css": "/test-event-planner/static/css/main.a1b6d3ee.css",
+    "main.js": "/test-event-planner/static/js/main.c8c219a9.js",
+    "static/js/9.c3fe12ae.chunk.js": "/test-event-planner/static/js/9.c3fe12ae.chunk.js",
     "static/js/330.c7e4375b.chunk.js": "/test-event-planner/static/js/330.c7e4375b.chunk.js",
-    "static/js/955.b1d9b3aa.chunk.js": "/test-event-planner/static/js/955.b1d9b3aa.chunk.js",
-    "static/js/560.5961d529.chunk.js": "/test-event-planner/static/js/560.5961d529.chunk.js",
+    "static/js/955.78f53f2e.chunk.js": "/test-event-planner/static/js/955.78f53f2e.chunk.js",
+    "static/js/254.1b2c7c8b.chunk.js": "/test-event-planner/static/js/254.1b2c7c8b.chunk.js",
+    "static/js/652.307ba079.chunk.js": "/test-event-planner/static/js/652.307ba079.chunk.js",
+    "static/media/backgroundHome.png": "/test-event-planner/static/media/backgroundHome.ae38ca30817b8b2ec58a.png",
     "static/media/icons.svg": "/test-event-planner/static/media/icons.747e2770f68cc63818e60651975f4b2d.svg",
     "index.html": "/test-event-planner/index.html",
-    "main.7acaea2f.css.map": "/test-event-planner/static/css/main.7acaea2f.css.map",
-    "main.acf874bc.js.map": "/test-event-planner/static/js/main.acf874bc.js.map",
-    "646.f5f46f5a.chunk.js.map": "/test-event-planner/static/js/646.f5f46f5a.chunk.js.map",
+    "main.a1b6d3ee.css.map": "/test-event-planner/static/css/main.a1b6d3ee.css.map",
+    "main.c8c219a9.js.map": "/test-event-planner/static/js/main.c8c219a9.js.map",
+    "9.c3fe12ae.chunk.js.map": "/test-event-planner/static/js/9.c3fe12ae.chunk.js.map",
     "330.c7e4375b.chunk.js.map": "/test-event-planner/static/js/330.c7e4375b.chunk.js.map",
-    "955.b1d9b3aa.chunk.js.map": "/test-event-planner/static/js/955.b1d9b3aa.chunk.js.map",
-    "560.5961d529.chunk.js.map": "/test-event-planner/static/js/560.5961d529.chunk.js.map"
+    "955.78f53f2e.chunk.js.map": "/test-event-planner/static/js/955.78f53f2e.chunk.js.map",
+    "254.1b2c7c8b.chunk.js.map": "/test-event-planner/static/js/254.1b2c7c8b.chunk.js.map",
+    "652.307ba079.chunk.js.map": "/test-event-planner/static/js/652.307ba079.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.acf874bc.js"
+    "static/css/main.a1b6d3ee.css",
+    "static/js/main.c8c219a9.js"
   ]
 }
