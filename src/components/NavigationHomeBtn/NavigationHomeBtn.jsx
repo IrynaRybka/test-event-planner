@@ -1,21 +1,19 @@
-import { Icon } from 'components/Icon/Icon';
+import { AddEventBtn, AddIcon, FilterBtn, IconFilter, IconFilterList, SectionBtn } from './NavigationHomeBtn.styled';
 
 const NavigationHomeBtn = () => {
   return (
-    <section>
-      <button>
-        Business
-        <Icon id="icon-filters" width={24} height={24} />
-      </button>
-      <button>
-        Sort by
-        <Icon id="icon-filters-list" width={24} height={24} />
-      </button>
-      <button>
-        <Icon id="icon-plus" width={24} height={24} />
-        Add new event
-      </button>
-    </section>
+    <SectionBtn>
+      <FilterBtn>
+        <IconFilter id="icon-filters" width={24} height={24} />
+      </FilterBtn>
+      <FilterBtn>
+        <IconFilterList id="icon-filters-list" width={24} height={24} />
+      </FilterBtn>
+      <AddEventBtn>
+        <AddIcon id="icon-plus" width={24} height={24} />
+        {/* Add new event */}
+      </AddEventBtn>
+    </SectionBtn>
   );
 };
 export default NavigationHomeBtn;

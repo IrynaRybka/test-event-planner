@@ -10,6 +10,7 @@ export const HeaderContainer = styled.header`
 padding: 32px 24px 24px 24px;
 border-bottom: 1px solid ${({ theme }) => theme.color.accentColor};
 background-color: ${({ theme }) => theme.color.backgroundHeader};
+display: grid;
 
 @media ${screen => screen.theme.screen.tablet} {
     padding: 26px 40px 18px 40px;
