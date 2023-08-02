@@ -1,11 +1,12 @@
 import NavigationHomeBtn from "components/NavigationHomeBtn/NavigationHomeBtn";
+import { ContainerDiv } from "./HomePage.styled";
 
 const HomePage = () => {
   return (
-    <div>
+    <ContainerDiv>
         <h1>My events</h1>
         <NavigationHomeBtn/>
-    </div>
+    </ContainerDiv>
   );
 };
 export default HomePage;

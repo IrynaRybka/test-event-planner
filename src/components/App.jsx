@@ -1,8 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
-
-
-
+import { ThemeProvider } from '@emotion/react';
+import { Light } from './Theme';
 
 const HomePage = lazy(() => import('pages/HomePage'));
 const AddEventPage = lazy(() => import('pages/AddEventPage'));
@@ -11,6 +10,7 @@ const Layout = lazy(() => import('components/Layout'));
 
 export const App = () => {
   return (
+    <ThemeProvider theme={Light}>
     <Suspense fallback={<p>Loading...</p>}>
       <Routes>
         <Route path="/" element={<Layout />}>
@@ -20,5 +20,6 @@ export const App = () => {
         </Route>
       </Routes>
     </Suspense>
+    </ThemeProvider>
   );
 };
