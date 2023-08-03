@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunktest_event_planner=self.webpackChunktest_event_planner||[]).push([[955],{955:function(e,n,t){t.r(n);var l=t(689),r=t(87),s=t(184);n.default=function(){var e,n,t=(0,l.TH)();return(0,s.jsxs)("div",{children:[(0,s.jsx)(r.OL,{to:null!==(e=null===(n=t.state)||void 0===n?void 0:n.from)&&void 0!==e?e:"/",children:"Go Back"}),"EventPage"]})}}}]);
-//# sourceMappingURL=955.78f53f2e.chunk.js.map

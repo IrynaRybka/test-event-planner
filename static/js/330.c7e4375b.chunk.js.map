@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/330.c7e4375b.chunk.js","mappings":"gJAOE,UAPmB,WACjB,OACE,0BACE,8CAGL,C","sources":["pages/AddEventPage.jsx"],"sourcesContent":["const AddEventPage = () => {\n    return (\n      <div>\n        <h1>Create new event</h1>\n      </div>\n    );\n  };\n  export default AddEventPage;"],"names":[],"sourceRoot":""}
