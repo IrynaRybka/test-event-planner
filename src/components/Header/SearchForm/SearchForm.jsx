@@ -1,6 +1,8 @@
+// import { useSearchParams } from "react-router-dom";
 import { SearchButton, SearchFormElement, SearchIcon, SearchInput } from "./SearchForm.styled";
 
-const SearchForm = () => {
+const SearchForm = ({value, onChange}) => {
+
 	return (
 	<SearchFormElement>
         <SearchButton type="submit">
@@ -12,6 +14,8 @@ const SearchForm = () => {
           autoFocus
           placeholder="Search by keywords"
           name="query"
+          value={value}
+          onChange={(e) => onChange(e.target.value)}
         />
       </SearchFormElement>);
 }

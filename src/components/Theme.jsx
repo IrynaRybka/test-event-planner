@@ -5,7 +5,8 @@ export const Light = {
     placeholderColor: '#888',
     textColor: '#3F3F3F',
     translateBtnColor: '#FFF',
-    shadowColor: 'rgba(166, 141, 174, 0.28)'
+    shadowColor: 'rgba(166, 141, 174, 0.28)',
+    priorityHightColor: '#FF2B77',
   },
   screen: {
     tablet: '(min-width: 768px)',

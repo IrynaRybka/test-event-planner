@@ -9,7 +9,7 @@ const NavigationHomeBtn = () => {
       <FilterBtn>
         <IconFilterList id="icon-filters-list" width={24} height={24} />
       </FilterBtn>
-      <AddEventBtn>
+      <AddEventBtn to="addEvent">
         <AddIcon id="icon-plus" width={24} height={24} />
         {/* Add new event */}
       </AddEventBtn>

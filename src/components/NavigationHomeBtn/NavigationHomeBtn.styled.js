@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import { Icon } from "components/Icon/Icon";
+import { NavLink } from "react-router-dom";
 
 export const SectionBtn = styled.section`
 display: grid;
@@ -27,8 +28,12 @@ export const IconFilterList = styled(Icon)`
 fill: ${({ theme }) => theme.color.textColor};
 stroke: ${({ theme }) => theme.color.textColor};
 `
-export const AddEventBtn = styled(FilterBtn)`
+export const AddEventBtn = styled(NavLink)`
 background-color: ${({ theme }) => theme.color.accentColor};
+border-radius: 8px;
+cursor: pointer;
+box-shadow: 2px 4px 9px 0px ${({ theme }) => theme.color.shadowColor};
+padding: 16px;
 `
 
 export const AddIcon = styled(Icon)`
