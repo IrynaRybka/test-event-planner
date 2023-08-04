@@ -1,13 +1,14 @@
 import NavigationHomeBtn from "components/NavigationHomeBtn/NavigationHomeBtn";
-import { ContainerDiv } from "./HomePage.styled";
+import { ContainerDiv, TitleHomePage } from "./HomePage.styled";
 import EventCard from "components/EventCard/EventCard";
+import { useMediaQuery } from '@material-ui/core';
 
 const HomePage = ({events}) => {
-  // console.log(events)
+  const isTablet = useMediaQuery('(min-width: 768px)');
   return (
     <ContainerDiv>
-        {/* <h1>My events</h1> */}
         <NavigationHomeBtn/>
+        {isTablet ? <TitleHomePage>My events</TitleHomePage> : null}
         <EventCard events={events}/>
     </ContainerDiv>
   );

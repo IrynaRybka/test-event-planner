@@ -1,5 +1,5 @@
-import { getEventById } from 'fakeApi';
-import { NavLink, useLocation, useParams } from 'react-router-dom';
+import { getEventById, deleteEventById } from 'fakeApi';
+import { useParams } from 'react-router-dom';
 import { ContainerDiv } from '../HomePage/HomePage.styled';
 import {
   ContainerBtn,
@@ -13,15 +13,16 @@ import {
   EventTime,
   ListCategory,
 } from './EventPage.styled';
+import GoBackBtn from 'components/GoBackBtn/GoBackBtn';
 
 const EventPage = () => {
-  const location = useLocation();
+
   const { id } = useParams();
   const event = getEventById(id);
 
   return (
     <ContainerDiv>
-      <NavLink to={location.state?.from ?? '/'}>Go Back</NavLink>
+      <GoBackBtn/>
       <h2>{event.title}</h2>
       <ContainerMain>
         <img src={event.image} alt="" width={272} height={168} />
@@ -46,7 +47,7 @@ const EventPage = () => {
         </ListCategory>
         <ContainerBtn>
           <EventBtn>Edit</EventBtn>
-          <DeleteBtn>Delete event</DeleteBtn>
+          <DeleteBtn onClick={() => deleteEventById(event.id)}>Delete event</DeleteBtn>
         </ContainerBtn>
         </DetailEvent>
       </ContainerMain>

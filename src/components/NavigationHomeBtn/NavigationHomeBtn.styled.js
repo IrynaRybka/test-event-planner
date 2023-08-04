@@ -8,7 +8,7 @@ gap: 24px;
 grid-template-columns: 56px 56px 56px;
 grid-template-rows: 56px;
 justify-content: end;
-margin-bottom: 40px;
+margin-bottom: 16px;
 
 `
 export const FilterBtn = styled.button`

@@ -14,7 +14,7 @@ const events = [
     description:
       'Discover an enchanting evening celebrating the world of art at our exclusive gallery opening.',
     image: `${galleryImg}`,
-    data: '18.10.2023',
+    date: '18.10',
     time: '12:00',
     location: 'Kyiv',
     category: 'Art',
@@ -26,7 +26,7 @@ const events = [
     description:
       'Engage in a thought-provoking journey of knowledge and collaboration at our Innovation Summit. ',
     image: `${innovationImg}`,
-    data: '18.10.2023',
+    date: '18.10',
     time: '12:00',
     location: 'Kyiv',
     category: 'Art',
@@ -38,7 +38,7 @@ const events = [
     description:
       'Ignite your creativity and nurture your storytelling skills in our immersive Creative Writing Workshop.',
     image: `${creativityImg}`,
-    data: '18.10.2023',
+    date: '18.10',
     time: '12:00',
     location: 'Kyiv',
     category: 'Art',
@@ -50,7 +50,7 @@ const events = [
     description:
       'Embrace the tropical vibes and escape to paradise at our Beach Luau Extravaganza.',
     image: `${soireeImg}`,
-    data: '18.10.2023',
+    date: '18.10',
     time: '12:00',
     location: 'Kyiv',
     category: 'Art',
@@ -62,7 +62,7 @@ const events = [
     description:
       'Unlock the secrets of effective leadership at our transformative Success Leadership Conference.',
     image: `${conferenceImg}`,
-    data: '18.10.2023',
+    date: '18.10',
     time: '12:00',
     location: 'Kyiv',
     category: 'Art',
@@ -74,7 +74,7 @@ const events = [
     description:
       'Witness the future of technology as innovative startups showcase their groundbreaking ideas.',
     image: `${startupImg}`,
-    data: '18.10.2023',
+    date: '18.10',
     time: '12:00',
     location: 'Kyiv',
     category: 'Art',
@@ -86,7 +86,7 @@ const events = [
     description:
       'Experience the magic of live music amidst the serene beauty of nature at our Acoustic Garden Concert.',
     image: `${concertImg}`,
-    data: '18.10.2023',
+    date: '18.10',
     time: '12:00',
     location: 'Kyiv',
     category: 'Art',
@@ -98,7 +98,7 @@ const events = [
     description:
       'Calling all thrill-seekers! Embark on an adrenaline-pumping journey at our Extreme Adventure Race.',
     image: `${extremeImg}`,
-    data: '18.10.2023',
+    date: '18.10',
     time: '12:00',
     location: 'Kyiv',
     category: 'Art',

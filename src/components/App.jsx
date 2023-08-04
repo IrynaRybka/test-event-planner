@@ -13,7 +13,7 @@ export const App = () => {
   const events = getEvents();
   const [searchParams, setSearchParams] = useSearchParams();
   const eventTitle = searchParams.get("title") ?? "";
- 
+
   const visibleEvents = events.filter((event) =>
     event.title.toLowerCase().includes(eventTitle.toLowerCase())
   );

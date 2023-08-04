@@ -3,23 +3,45 @@ import {
   ContainerDescription,
   ContainerEventSection,
   ContainerImg,
-  Picture,
+  DescriptionEvent,
+  ElementListDate,
+  ListCategory,
+  ListCategoryElement,
+  ListDate,
+  TitleEvent,
 } from './EventCard.styled';
 
 const EventCard = ({ events }) => {
-   return (
+  return (
     <>
       {events.map(event => (
-        <ContainerEventSection
-          key={event.id} >
+        <ContainerEventSection key={event.id}>
           <NavLink to={`event/${event.id}`}>
-            <ContainerImg>
-              <Picture src={event.image} alt={event.title} />
-            </ContainerImg>
+            <ContainerImg
+              style={{ backgroundImage: `url(${event.image})` }}
+            ></ContainerImg>
             <ContainerDescription>
-              <h3>{event.title}</h3>
-              <p>{event.description}</p>
+              <TitleEvent>{event.title}</TitleEvent>
+              <DescriptionEvent>{event.description}</DescriptionEvent>
             </ContainerDescription>
+            <ListCategory>
+              <ListCategoryElement>
+                <p>{event.category}</p>
+              </ListCategoryElement>
+              <ListCategoryElement>
+                <p>{event.priority}</p>
+              </ListCategoryElement>
+            </ListCategory>
+            <ListDate>
+              <ElementListDate>
+                <p>
+                  {event.date} at {event.time}
+                </p>
+              </ElementListDate>
+              <ElementListDate>
+                <p>{event.location}</p>
+              </ElementListDate>
+            </ListDate>
           </NavLink>
         </ContainerEventSection>
       ))}

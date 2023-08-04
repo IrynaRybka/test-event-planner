@@ -7,6 +7,9 @@ export const Light = {
     translateBtnColor: '#FFF',
     shadowColor: 'rgba(166, 141, 174, 0.28)',
     priorityHightColor: '#FF2B77',
+    backgroundTimeEvent: 'rgba(255, 255, 255, 0.8)',
+    eventTitleColor: '#1C1B1F',
+    eventDescriptionColor: '#49454F',
   },
   screen: {
     tablet: '(min-width: 768px)',

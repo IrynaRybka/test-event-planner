@@ -29,8 +29,21 @@ export const SearchInput = styled.input`
   border-radius: 10px;
   border: none;
   outline-color: ${({ theme }) => theme.color.accentColor};
+
+  @media ${screen => screen.theme.screen.tablet} {
+    width: 308px;
+    margin-right: 24px;
+}
+@media ${screen => screen.theme.screen.desktop} {
+    width: 350px;
+}
 `;
 export const SearchFormElement = styled.form`
   position: relative;
   margin-top: 31px;
-`;
+
+  @media ${screen => screen.theme.screen.tablet} {
+    margin-top: 0;
+}
+` 
+

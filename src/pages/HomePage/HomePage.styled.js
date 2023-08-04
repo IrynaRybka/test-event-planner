@@ -6,7 +6,7 @@ background-image: url(${background});
 background-repeat: no-repeat;
 background-position: top left;
 /* background-size: 100vw 100vh; */
-background-attachment: fixed;
+/* background-attachment: fixed; */
 padding-left: 24px;
 padding-right: 24px;
 padding-bottom: 281px;
@@ -14,4 +14,10 @@ padding-top: 40px;
 display: grid;
 grid-template-columns: 272px;
 gap: 24px;
+`
+export const TitleHomePage = styled.h1`
+color: ${({theme}) => theme.color.textColor};
+font-size: 32px;
+font-weight: 600;
+
 `
