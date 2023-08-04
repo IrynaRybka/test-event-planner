@@ -1,10 +1,18 @@
 import NavigationHomeBtn from "components/NavigationHomeBtn/NavigationHomeBtn";
 import { ContainerDiv, TitleHomePage } from "./HomePage.styled";
 import EventCard from "components/EventCard/EventCard";
-import { useMediaQuery } from '@material-ui/core';
+import { useEffect } from "react";
+import { useState } from "react";
+
 
 const HomePage = ({events}) => {
-  const isTablet = useMediaQuery('(min-width: 768px)');
+  const [isTablet, setIsTablet] = useState(false); 
+
+  useEffect(() => {
+    const query = window.matchMedia("(min-width: 768px)");
+    setIsTablet(query.matches);
+  }, []);
+
   return (
     <ContainerDiv>
         <NavigationHomeBtn/>

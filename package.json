@@ -5,7 +5,6 @@
   "homepage": "https://irynarybka.github.io/test-event-planner/",
   "dependencies": {
     "@emotion/styled": "^11.11.0",
-    "@material-ui/core": "^4.12.4",
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",

@@ -2,7 +2,6 @@
 import { HeaderContainer, LogoLink } from './Header.styled';
 import SearchForm from './SearchForm/SearchForm';
 import Translate from './Translate/Translate';
-// import {getEvents} from '../../fakeApi';
 
 const Header = ({value, onChange}) => {
 
