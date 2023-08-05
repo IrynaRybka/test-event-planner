@@ -5,12 +5,40 @@ export const ContainerEventSection = styled.section`
   background-color: ${({ theme }) => theme.color.translateBtnColor};
   border-radius: 12px;
   box-shadow: 2px 4px 9px 0px ${({ theme }) => theme.color.shadowColor};
+
+  & button {
+    display: none;
+  }
+  @media (min-width: 768px) {
+    &:hover button {
+      display: block;
+      cursor: pointer;
+      padding: 10px 24px;
+      margin-left: 202px;
+      margin-bottom: 16px;
+      border-radius: 8px;
+      border: none;
+      background-color: ${({ theme }) => theme.color.accentColor};
+      color: ${({ theme }) => theme.color.translateBtnColor};
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.42;
+      transition-property: color, background-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+        background-color: ${({ theme }) => theme.color.hoverBtnColor};
+      }
+    }
+  }
 `;
 export const ContainerImg = styled.div`
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   height: 336px;
-
   background-repeat: no-repeat;
   background-size: cover;
 `;

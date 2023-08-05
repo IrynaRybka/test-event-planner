@@ -11,9 +11,10 @@ export const Light = {
     eventTitleColor: '#1C1B1F',
     eventDescriptionColor: '#49454F',
     borderInputColor: '#ACA7C3',
+    hoverBtnColor: '#6243FF',
   },
   screen: {
     tablet: '(min-width: 768px)',
-    desktop: '(min-width: 1200px)',
+    desktop: '(min-width: 1440px)',
   },
 };

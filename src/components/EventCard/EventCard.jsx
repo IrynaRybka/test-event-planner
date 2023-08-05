@@ -10,8 +10,10 @@ import {
   ListDate,
   TitleEvent,
 } from './EventCard.styled';
+import { useMediaQuery } from '@mui/material';
 
 const EventCard = ({ events }) => {
+  const isTablet = useMediaQuery('(min-width: 768px)');
   return (
     <>
       {events.map(event => (
@@ -42,6 +44,7 @@ const EventCard = ({ events }) => {
                 <p>{event.location}</p>
               </ElementListDate>
             </ListDate>
+            {isTablet ? <button>More info</button> : null}
           </NavLink>
         </ContainerEventSection>
       ))}

@@ -1,7 +1,8 @@
 import { getEventById, deleteEventById } from 'fakeApi';
 import { useParams } from 'react-router-dom';
-import { ContainerDiv } from '../HomePage/HomePage.styled';
+
 import {
+  ContainerDivEvent,
   ContainerBtn,
   ContainerMain,
   DeleteBtn,
@@ -22,7 +23,7 @@ const EventPage = () => {
   const event = getEventById(id);
 
   return (
-    <ContainerDiv>
+    <ContainerDivEvent>
       <GoBackBtn/>
       <EventTitle>{event.title}</EventTitle>
       <ContainerMain>
@@ -52,7 +53,7 @@ const EventPage = () => {
         </ContainerBtn>
         </DetailEvent>
       </ContainerMain>
-    </ContainerDiv>
+    </ContainerDivEvent>
   );
 };
 export default EventPage;
