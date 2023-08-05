@@ -1,22 +1,17 @@
 import NavigationHomeBtn from "components/NavigationHomeBtn/NavigationHomeBtn";
 import { ContainerDiv, TitleHomePage } from "./HomePage.styled";
 import EventCard from "components/EventCard/EventCard";
-import { useEffect } from "react";
-import { useState } from "react";
+import useMediaQuery from '@mui/material/useMediaQuery';
+
 
 
 const HomePage = ({events}) => {
-  const [isTablet, setIsTablet] = useState(false); 
-
-  useEffect(() => {
-    const query = window.matchMedia("(min-width: 768px)");
-    setIsTablet(query.matches);
-  }, []);
+  const isTablet = useMediaQuery('(min-width: 768px)'); 
 
   return (
     <ContainerDiv>
         <NavigationHomeBtn/>
-        {isTablet ? <TitleHomePage>My events</TitleHomePage> : null}
+        {isTablet ? <TitleHomePage>My events</TitleHomePage> : null }
         <EventCard events={events}/>
     </ContainerDiv>
   );
