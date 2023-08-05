@@ -9,7 +9,7 @@ export const ContainerEventSection = styled.section`
   & button {
     display: none;
   }
-  @media (min-width: 768px) {
+  @media ${screen => screen.theme.screen.tablet} {
     &:hover button {
       display: block;
       cursor: pointer;
