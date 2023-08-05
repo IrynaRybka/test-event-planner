@@ -11,6 +11,7 @@ import {
   EventCategory,
   EventPriority,
   EventTime,
+  EventTitle,
   ListCategory,
 } from './EventPage.styled';
 import GoBackBtn from 'components/GoBackBtn/GoBackBtn';
@@ -23,7 +24,7 @@ const EventPage = () => {
   return (
     <ContainerDiv>
       <GoBackBtn/>
-      <h2>{event.title}</h2>
+      <EventTitle>{event.title}</EventTitle>
       <ContainerMain>
         <img src={event.image} alt="" width={272} height={168} />
         <DetailEvent>
@@ -41,7 +42,7 @@ const EventPage = () => {
           </li>
           <li>
             <EventTime>
-              {event.data} at {event.time} am
+              {event.date} at {event.time} am
             </EventTime>
           </li>
         </ListCategory>

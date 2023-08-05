@@ -54,7 +54,7 @@ gap: 24px;
 export const ContainerMain = styled.main`
 background-color: ${({ theme }) => theme.color.translateBtnColor};
 border-radius: 8px;
-box-shadow: 2px 4px 9px 0px ${({ theme }) => theme.color.shadowColor};;
+box-shadow: 2px 4px 9px 0px ${({ theme }) => theme.color.shadowColor};
 `
 export const DetailEvent = styled.div`
 padding: 24px 16px 40px 16px;
@@ -63,4 +63,10 @@ export const Description = styled.p`
 font-size: 14px;
 line-height: 1.42;
 margin-bottom: 24px;
+`
+export const EventTitle = styled.h1`
+color: ${({ theme }) => theme.color.textColor};
+font-size: 24px;
+font-weight: 600;
+
 `

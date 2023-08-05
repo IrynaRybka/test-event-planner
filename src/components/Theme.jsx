@@ -10,6 +10,7 @@ export const Light = {
     backgroundTimeEvent: 'rgba(255, 255, 255, 0.8)',
     eventTitleColor: '#1C1B1F',
     eventDescriptionColor: '#49454F',
+    borderInputColor: '#ACA7C3',
   },
   screen: {
     tablet: '(min-width: 768px)',

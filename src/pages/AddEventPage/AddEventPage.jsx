@@ -5,9 +5,10 @@ import defaultImg from '../../assets/images/default-des.jpg';
 import { getEvents, addEvent } from 'fakeApi';
 import { toast } from 'react-toastify';
 import GoBackBtn from 'components/GoBackBtn/GoBackBtn';
+import { CloseBtn, ContainerForm, CrossIcon, Input, Label, TaglineAdd } from './AddEventPage.styled';
+
 
 const AddEventPage = () => {
- 
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [date, setDate] = useState('');
@@ -15,7 +16,7 @@ const AddEventPage = () => {
   const [city, setCity] = useState('');
   const [category, setCategory] = useState('');
   const [priority, setPriority] = useState('');
-  // const [isOpen, setIsOpen] = useState(false);
+
   const events = getEvents();
 
   const onAddEvent = event => {
@@ -61,113 +62,118 @@ const AddEventPage = () => {
 
   return (
     <ContainerDiv>
-      <GoBackBtn/>
-      <h1>Create new event</h1>
-      <form onSubmit={onAddEvent}>
-        <label htmlFor="title">
-          Title
-          <input
-            type="text"
-            autoComplete="off"
-            autoFocus
-            name="title"
-            value={title}
-            onChange={e => setTitle(e.target.value)}
-            required
-          />
-        </label>
-        <br />
-        <label>
-          Description
-          <textarea
-            type="text"
-            autoComplete="off"
-            name="description"
-            value={description}
-            onChange={e => setDescription(e.target.value)}
-            required
-            // resize="none"
-          />
-        </label>
-        <br />
-        <label>
-          Select date
-          <input
-            type="date"
-            autoComplete="off"
-            name="date"
-            value={date}
-            onChange={e => setDate(e.target.value)}
-            required
-          />
-        </label>
-        <br />
-        <label>
-          Select time
-          <input
-            type="time"
-            autoComplete="off"
-            name="time"
-            value={time}
-            onChange={e => setTime(e.target.value)}
-            required
-          />
-        </label>
-        <br />
-        <label>
-          Location
-          <input
-            type="text"
-            autoComplete="off"
-            placeholder="Search by keywords"
-            name="city"
-            value={city}
-            onChange={e => setCity(e.target.value)}
-            required
-          />
-        </label>
-        <br />
-        <label>
-          Category
-          <select
-            required
-            name="category"
-            value={category}
-            onChange={e => setCategory(e.target.value)}
-         
-          >
-            <option value="">Select category</option>
-            <option value="Art">Art</option>
-            <option value="Music">Music</option>
-            <option value="Business">Business</option>
-            <option value="Conference">Conference</option>
-            <option value="Workshop">Workshop</option>
-            <option value="Party">Party</option>
-            <option value="Sport">Sport</option>
-          </select>
-        </label>
-        <br />
-        <label>
-          Add picture
-          <input type="file"
-        accept="image/*"  name="picture" disabled />
-        </label>
-        <label>
-          Priority
-          <select
-            required
-            name="priority"
-            value={priority}
-            onChange={e => setPriority(e.target.value)}
-          >
-            <option value="">Select priority</option>
-            <option value="Heigh">Heigh</option>
-            <option value="Medium">Medium</option>
-            <option value="Low">Low</option>
-          </select>
-        </label>
-        <button type="submit">Add event</button>
-      </form>
+      <GoBackBtn />
+      <TaglineAdd>Create new event</TaglineAdd>
+      <ContainerForm>
+         <form onSubmit={onAddEvent}>
+          <Label htmlFor="title">
+            Title
+            <Input
+              type="text"
+              autoComplete="off"
+              autoFocus
+              name="title"
+              value={title}
+              onChange={e => setTitle(e.target.value)}
+              required
+            />
+            <CloseBtn>
+              <CrossIcon id="icon-cross-small" width={24} height={24}/>
+            </CloseBtn>
+          </Label>
+       
+          <Label>
+            Description
+            <textarea
+              type="text"
+              autoComplete="off"
+              name="description"
+              value={description}
+              onChange={e => setDescription(e.target.value)}
+              required
+              // resize="none"
+            />
+          </Label>
+          <br />
+          <label>
+            Select date
+            <input
+              type="date"
+              autoComplete="off"
+              name="date"
+              value={date}
+              onChange={e => setDate(e.target.value)}
+              required
+            />
+          </label>
+          <br />
+          <label>
+            Select time
+            <input
+              type="time"
+              autoComplete="off"
+              name="time"
+              value={time}
+              onChange={e => setTime(e.target.value)}
+              required
+            />
+          </label>
+          <br />
+          <Label>
+            Location
+            <Input
+              type="text"
+              autoComplete="off"
+              name="city"
+              value={city}
+              onChange={e => setCity(e.target.value)}
+              required
+            />
+            <CloseBtn>
+              <CrossIcon id="icon-cross-small" width={24} height={24}/>
+            </CloseBtn>
+          </Label>
+          <br />
+          <label>
+            Category
+            <select
+              required
+              name="category"
+              value={category}
+              onChange={e => setCategory(e.target.value)}
+            >
+              <option value="">Select category</option>
+              <option value="Art">Art</option>
+              <option value="Music">Music</option>
+              <option value="Business">Business</option>
+              <option value="Conference">Conference</option>
+              <option value="Workshop">Workshop</option>
+              <option value="Party">Party</option>
+              <option value="Sport">Sport</option>
+            </select>
+          </label>
+          <br />
+          <Label style={{color: '#ACA7C3'}}>
+            Add picture
+            <Input type="file" accept="image/*" name="picture" disabled />
+            </Label>
+          <label>
+            Priority
+            <select
+              required
+              name="priority"
+              value={priority}
+              onChange={e => setPriority(e.target.value)}
+            >
+              <option value="">Select priority</option>
+              <option value="Heigh">Heigh</option>
+              <option value="Medium">Medium</option>
+              <option value="Low">Low</option>
+            </select>
+          </label>
+          <button type="submit">Add event</button>
+        </form>
+      </ContainerForm>
     </ContainerDiv>
   );
 };

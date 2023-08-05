@@ -6,7 +6,7 @@ background-image: url(${background});
 background-repeat: no-repeat;
 background-position: top left;
 /* background-size: 100vw 100vh; */
-/* background-attachment: fixed; */
+background-attachment: fixed;
 padding-left: 24px;
 padding-right: 24px;
 padding-bottom: 281px;
