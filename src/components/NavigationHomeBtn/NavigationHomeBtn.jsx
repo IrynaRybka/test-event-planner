@@ -13,11 +13,11 @@ const NavigationHomeBtn = () => {
   const isTablet = useMediaQuery('(min-width: 768px)');
   return (
     <SectionBtn>
-      <FilterBtn>
+      <FilterBtn disable={true}>
         {isTablet ? <span>Category</span> : null}
         <IconFilter id="icon-filters" width={24} height={24} />
       </FilterBtn>
-      <FilterBtnList>
+      <FilterBtnList disable={true}>
         {isTablet ? <span>Sort by</span> : null}
         <IconFilterList id="icon-filters-list" width={24} height={24} />
       </FilterBtnList>

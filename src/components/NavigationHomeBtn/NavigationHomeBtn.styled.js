@@ -13,11 +13,17 @@ export const SectionBtn = styled.section`
   @media ${screen => screen.theme.screen.tablet} {
     grid-template-columns: 143px 129px 193px;
   }
+
+  @media ${screen => screen.theme.screen.desktop} {
+    position: absolute;
+    top: 60px;
+    right: 80px;
+  }
 `;
 export const FilterBtn = styled.button`
   border: none;
   border-radius: 8px;
-  background-color: ${({ theme }) => theme.color.translateBtnColor};
+  /* background-color: ${({ theme }) => theme.color.translateBtnColor}; */
   cursor: pointer;
   box-shadow: 2px 4px 9px 0px ${({ theme }) => theme.color.shadowColor};
   padding: 16px;

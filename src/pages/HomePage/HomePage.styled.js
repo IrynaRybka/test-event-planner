@@ -17,6 +17,7 @@ export const ContainerDiv = styled.div`
 
   @media ${screen => screen.theme.screen.desktop} {
     padding: 60px 80px 198px 80px;
+    position: relative;
   }
 `;
 export const ContainerEvents = styled.div`
@@ -38,4 +39,9 @@ export const TitleHomePage = styled.h1`
   font-weight: 600;
   margin-bottom: 24px;
   margin-top: 24px;
+
+  @media ${screen => screen.theme.screen.desktop} {
+    margin-top: 0;
+    margin-bottom: 44px;
+  }
 `;
