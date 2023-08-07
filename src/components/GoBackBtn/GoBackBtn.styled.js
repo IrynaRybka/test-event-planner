@@ -7,6 +7,14 @@ export const BackBtn = styled(NavLink)`
   align-items: center;
   color: ${({ theme }) => theme.color.accentColor};
   font-size: 14px;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: ${({ theme }) => theme.color.hoverBtnColor};
+  }
 `;
 
 export const ArrowBack = styled(Icon)`

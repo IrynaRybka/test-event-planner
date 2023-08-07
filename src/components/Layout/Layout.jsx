@@ -5,7 +5,7 @@ import { Outlet } from 'react-router-dom';
 const Layout = ({ value, onChange }) => {
   return (
     <>
-	<Header value={value} onChange={onChange}/>
+      <Header value={value} onChange={onChange} />
       <Suspense fallback={<p>Loading....</p>}>
         <Outlet />
       </Suspense>

@@ -33,10 +33,10 @@ export const SearchInput = styled.input`
   @media ${screen => screen.theme.screen.tablet} {
     width: 308px;
     margin-right: 24px;
-}
-@media ${screen => screen.theme.screen.desktop} {
+  }
+  @media ${screen => screen.theme.screen.desktop} {
     width: 350px;
-}
+  }
 `;
 export const SearchFormElement = styled.form`
   position: relative;
@@ -44,6 +44,5 @@ export const SearchFormElement = styled.form`
 
   @media ${screen => screen.theme.screen.tablet} {
     margin-top: 0;
-}
-` 
-
+  }
+`;

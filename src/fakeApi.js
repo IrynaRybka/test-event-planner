@@ -116,15 +116,14 @@ export const getEventById = eventId => {
 
 export const addEvent = newEvent => {
   events.push(newEvent);
-  return true; 
+  return true;
 };
 
 export const deleteEventById = eventId => {
   const index = events.findIndex(event => event.id === eventId);
   if (index !== -1) {
     events.splice(index, 1);
-    return true; 
+    return true;
   }
-  return false; 
+  return false;
 };
-

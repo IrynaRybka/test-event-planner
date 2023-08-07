@@ -1,4 +1,8 @@
-import { TranslateBtn, TranslateIconArrow, TranslateText } from './Translate.styled';
+import {
+  TranslateBtn,
+  TranslateIconArrow,
+  TranslateText,
+} from './Translate.styled';
 
 const Translate = () => {
   return (

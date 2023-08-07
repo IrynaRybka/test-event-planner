@@ -1,12 +1,21 @@
 import { nanoid } from 'nanoid';
+// import * as Yup from 'Yup';
 import { ContainerDiv } from '../HomePage/HomePage.styled';
 import { useState } from 'react';
 import defaultImg from '../../assets/images/default-des.jpg';
-import { getEvents, addEvent } from 'fakeApi';
-import { toast } from 'react-toastify';
+import { addEvent } from 'fakeApi';
 import GoBackBtn from 'components/GoBackBtn/GoBackBtn';
-import { CloseBtn, ContainerForm, CrossIcon, Input, Label, TaglineAdd } from './AddEventPage.styled';
-
+import {
+  AddBtn,
+  ContainerForm,
+  CustomDate,
+  CustomForm,
+  CustomSelect,
+  Input,
+  Label,
+  TaglineAdd,
+  TextDescription,
+} from './AddEventPage.styled';
 
 const AddEventPage = () => {
   const [title, setTitle] = useState('');
@@ -17,7 +26,7 @@ const AddEventPage = () => {
   const [category, setCategory] = useState('');
   const [priority, setPriority] = useState('');
 
-  const events = getEvents();
+  // const events = getEvents();
 
   const onAddEvent = event => {
     event.preventDefault();
@@ -33,20 +42,22 @@ const AddEventPage = () => {
       priority: priority,
     };
     console.log(newEvent);
-    if (events.some(event => event.title === newEvent.title)) {
-      toast.warn(`${newEvent.title} has in your event planner!`, {
-        position: 'top-right',
-        autoClose: 3000,
-        theme: 'colored',
-      });
-      return false;
-    }
+    // const schema = Yup.object().shape({
+    //   title: Yup.string().required().minLength(3).maxLength(50).matches(/^[a-zA-Z0-9- ]+$/),
+    //   description: Yup.string().required(),
+    //   date: Yup.date().default(() => new Date()),
+    //   time: Yup.default(() => new Date()),
+    //   city: Yup.string().required().matches(/^[a-zA-Z0-9- ]+<span class="math-inline">/),
+    //   category: Yup.string().required(),
+    //   priority: Yup.string().required(),
+    // });
+
+    // const validationResult = schema.validate(newEvent);
+    // if (validationResult.errors) {
+    //   <p>Validation error</p>;
+    //   return false;
+    // }
     addEvent(newEvent);
-    toast.warn(`${newEvent.title} was successful added!`, {
-      position: 'top-right',
-      autoClose: 3000,
-      theme: 'colored',
-    });
     reset();
   };
 
@@ -65,7 +76,7 @@ const AddEventPage = () => {
       <GoBackBtn />
       <TaglineAdd>Create new event</TaglineAdd>
       <ContainerForm>
-         <form onSubmit={onAddEvent}>
+        <CustomForm onSubmit={onAddEvent} validate={true}>
           <Label htmlFor="title">
             Title
             <Input
@@ -77,27 +88,26 @@ const AddEventPage = () => {
               onChange={e => setTitle(e.target.value)}
               required
             />
-            <CloseBtn>
-              <CrossIcon id="icon-cross-small" width={24} height={24}/>
-            </CloseBtn>
+            {/* <CloseBtn>
+                <CrossIcon id="icon-cross-small" width={24} height={24} />
+              </CloseBtn> */}
           </Label>
-       
+
           <Label>
             Description
-            <textarea
+            <TextDescription
               type="text"
               autoComplete="off"
               name="description"
               value={description}
               onChange={e => setDescription(e.target.value)}
               required
-              // resize="none"
             />
           </Label>
-          <br />
-          <label>
+
+          <Label>
             Select date
-            <input
+            <CustomDate
               type="date"
               autoComplete="off"
               name="date"
@@ -105,11 +115,11 @@ const AddEventPage = () => {
               onChange={e => setDate(e.target.value)}
               required
             />
-          </label>
-          <br />
-          <label>
+          </Label>
+
+          <Label>
             Select time
-            <input
+            <CustomDate
               type="time"
               autoComplete="off"
               name="time"
@@ -117,8 +127,8 @@ const AddEventPage = () => {
               onChange={e => setTime(e.target.value)}
               required
             />
-          </label>
-          <br />
+          </Label>
+
           <Label>
             Location
             <Input
@@ -129,14 +139,14 @@ const AddEventPage = () => {
               onChange={e => setCity(e.target.value)}
               required
             />
-            <CloseBtn>
-              <CrossIcon id="icon-cross-small" width={24} height={24}/>
-            </CloseBtn>
+            {/* <CloseBtn>
+                <CrossIcon id="icon-cross-small" width={24} height={24} />
+              </CloseBtn> */}
           </Label>
-          <br />
-          <label>
+
+          <Label>
             Category
-            <select
+            <CustomSelect
               required
               name="category"
               value={category}
@@ -150,16 +160,17 @@ const AddEventPage = () => {
               <option value="Workshop">Workshop</option>
               <option value="Party">Party</option>
               <option value="Sport">Sport</option>
-            </select>
-          </label>
-          <br />
-          <Label style={{color: '#ACA7C3'}}>
+            </CustomSelect>
+          </Label>
+
+          <Label style={{ color: '#ACA7C3' }}>
             Add picture
             <Input type="file" accept="image/*" name="picture" disabled />
-            </Label>
-          <label>
+          </Label>
+
+          <Label>
             Priority
-            <select
+            <CustomSelect
               required
               name="priority"
               value={priority}
@@ -169,10 +180,10 @@ const AddEventPage = () => {
               <option value="Heigh">Heigh</option>
               <option value="Medium">Medium</option>
               <option value="Low">Low</option>
-            </select>
-          </label>
-          <button type="submit">Add event</button>
-        </form>
+            </CustomSelect>
+          </Label>
+          <AddBtn type="submit">Add event</AddBtn>
+        </CustomForm>
       </ContainerForm>
     </ContainerDiv>
   );

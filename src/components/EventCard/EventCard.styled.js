@@ -34,6 +34,11 @@ export const ContainerEventSection = styled.section`
       }
     }
   }
+  @media ${screen => screen.theme.screen.desktop} {
+    &:hover button {
+    margin-left: 172px;
+    }
+  }
 `;
 export const ContainerImg = styled.div`
   border-top-left-radius: 12px;
@@ -69,7 +74,7 @@ export const ListCategoryElement = styled.li`
 export const ListDate = styled.ul`
   position: absolute;
   width: 100%;
-  top: 296px;
+  top: 297px;
   left: 0;
   display: flex;
   justify-content: space-between;

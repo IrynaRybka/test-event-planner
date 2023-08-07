@@ -23,11 +23,11 @@ export const SectionBtn = styled.section`
 export const FilterBtn = styled.button`
   border: none;
   border-radius: 8px;
-  /* background-color: ${({ theme }) => theme.color.translateBtnColor}; */
+  background-color: ${({ theme }) => theme.color.translateBtnColor};
   cursor: pointer;
   box-shadow: 2px 4px 9px 0px ${({ theme }) => theme.color.shadowColor};
   padding: 16px;
-
+  
   @media ${screen => screen.theme.screen.tablet} {
     display: flex;
     justify-content: space-between;
@@ -39,11 +39,10 @@ export const FilterBtn = styled.button`
   }
 `;
 export const FilterBtnList = styled(FilterBtn)`
-@media ${screen => screen.theme.screen.tablet} {
+  @media ${screen => screen.theme.screen.tablet} {
     color: ${({ theme }) => theme.color.textColor};
-}
-
-`
+  }
+`;
 export const IconFilter = styled(Icon)`
   fill: transparent;
   stroke: ${({ theme }) => theme.color.accentColor};
@@ -58,6 +57,14 @@ export const AddEventBtn = styled(NavLink)`
   cursor: pointer;
   box-shadow: 2px 4px 9px 0px ${({ theme }) => theme.color.shadowColor};
   padding: 16px;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: ${({ theme }) => theme.color.hoverBtnColor};
+  }
 
   @media ${screen => screen.theme.screen.tablet} {
     display: flex;
